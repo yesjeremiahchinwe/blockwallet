@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ccf93aea0.js" crossorigin="anonymous"></script>
+    <title>BlockWallet</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="header_one header_two header_three">
+        <div class="header_container">
+            <a href="/">
+                <img src="./assets/logo.svg" alt="The name of the company's website also serving as the logo"
+                    class="header_logo">
+            </a>
+
+            <!-- -----------Desktop View --------------------- -->
+            <nav class="header_nav_desktop">
+                <ul class="header_ul_desktop">
+                    <li><a href="#" class="group_one">Features</a></li>
+                    <li><a href="#" class="group_two">Resource Library</a></li>
+                    <li><a href="#" class="group_three">Compare</a></li>
+                    <li><a href="#" class="group_four">Token</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger_menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button class="download_btn">Download</button>
+        </div>
+    </header>
+
+    <!-- -------------------- Navbar for Mobile View Only ---------------------- -->
+    <nav class="header_nav_mobile">
+        <button class="hamburger_menu close_menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul class="header_ul_mobile">
+            <!-- ----------------- Features Navbar -------------------------- -->
+            <li class="features">Features <span><i class="fa-solid fa-caret-down"></i></span></li>
+            <div class="mobile_features_container">
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Productive</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-rotate"></i>Swaps</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bridge"></i>Bridges</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shuffle"></i>Gas Tracker</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bitcoin-sign"></i>Buy Crypto</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Safe</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-server"></i>Hardware Wallet Support</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-gift"></i>Token Allowances Revoke</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shield"></i>Phishing Protection</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Connected</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-road-bridge"></i>Infrastructure</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-hive"></i>Web3 Support</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-network-wired"></i>Quick Network Finder</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Private</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-bots"></i>Flashbots RPC</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-eye"></i> Privacy Proxy</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <!--  -------------------- Resource Navbar ------------------------------ -->
+            <li class="resource">Resource Library<span><i class="fa-solid fa-caret-down"></i></span></li>
+            <div class="mobile_resource_container">
+                <div class="mobile_resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-blog"></i>Blog</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-file"></i>Docs</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-user-graduate"></i>Academy</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <!-- ------------------- Compare Navbar ------------------------- -->
+            <li class="compare">Compare <span><i class="fa-solid fa-caret-down"></i></span></li>
+            <div class="mobile_compare_container">
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-meta"></i>METAMASK</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-wallet"></i></i>Trust Wallet</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-arrow-right-to-city"></i>EXODUS</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-horse-head"></i>Taho</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#" class="fiveth_link">
+                            <h6>XDEFI <i class="fa-solid fa-shield"></i></h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-magento"></i>argent</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <!-- --------------- Token Nav -------------------- -->
+            <li><a href="#" class="">Token</a></li>
+        </ul>
+
+        <button class="mobile_download">Download for Chrome
+            <span><i class="fa-brands fa-chrome"></i></span>
+        </button>
+    </nav>
+    <div class="overlay"></div>
+
+
+    <!--  ------------------- Navbar for Desktop View Only ---------------------- -->
+    <!-- --------------------- Features nav bar ----------------- -->
+    <nav>
+        <ul class="features_ul">
+            <div class="features_container">
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Productive</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-rotate"></i>Swaps</h6>
+                            <p>Swap tokens at low cost right within the wallet</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bridge"></i>Bridges</h6>
+                            <p>Hop between chains with ease directly in the wallet.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shuffle"></i>Gas Tracker</h6>
+                            <p>Keep an eye on gas prices, catch the sweet spot and save on fees.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bitcoin-sign"></i>Buy Crypto</h6>
+                            <p>Purchase Crypto using your credit or debit card with ease.</p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Safe</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-server"></i>Hardware Wallet Support</h6>
+                            <p>
+                                Connect Ledger, Trezor or Keystone for the ultimate security.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-gift"></i>Token Allowances Revoke</h6>
+                            <p> Keep your tokens in check, revoke permissions, and stay in control.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shield"></i>Phishing Protection</h6>
+                            <p>
+                                Generate unique artwork to recognize fake wallet pop-ups.</p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Connected</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-road-bridge"></i>Infrastructure</h6>
+                            <p>
+                                Robust nodes and failover system, to keep your wallet running when it matters the most.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-hive"></i>Web3 Support</h6>
+                            <p>
+                                Set free in Web3 - connect with your favorite DApps.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-network-wired"></i>Quick Network Finder</h6>
+                            <p>
+                                Discover and connect to new networks in seconds.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Private</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-bots"></i>Flashbots RPC</h6>
+                            <p>
+                                Save money - say bye to frontrunning bots and don't pay for failed transactions.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-eye"></i> Privacy Proxy</h6>
+                            <p>
+                                Stop leaking IP address and more to node providers.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+
+    <!-- ----------------- Resource Nav ---------------------- -->
+    <nav>
+        <ul class="resource_ul">
+            <div class="resource_container">
+                <div class="resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-blog"></i>Blog</h6>
+                            <p>Catch up on BlockWallet news and stay in the loop with the latest developments.</p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-file"></i>Docs</h6>
+                            <p>
+                                Dive into detailed docs and guides to master BlockWallet with ease.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-user-graduate"></i>Academy</h6>
+                            <p>
+                                Master the essentials of blockchain, wallets, network bridges, and much more.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- --------------------------- Compare Nav ---------------------------- -->
+    <nav>
+        <ul class="compare_ul">
+            <div class="compare_container">
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-meta"></i>METAMASK</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-wallet"></i></i>Trust Wallet</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-arrow-right-to-city"></i>EXODUS</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-horse-head"></i>Taho</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="compare_column">
+                    <li>
+                        <a href="#" class="fiveth_link">
+                            <div>
+                                <h6>XDEFI</h6>
+                                <small>WALLET</small>
+                            </div>
+                            <i class="fa-solid fa-shield"></i>
+                        </a>
+                    </li>
+                </div>
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-magento"></i>argent</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <button>Compare All</button>
+        </ul>
+    </nav>
+
+    <!-- -------------------- End of Navbar for Desktop View -------------------------- -->
+
+
+    <main>
+        <section class="hero">
+            <h2>True Self Custodial Web3 Wallet</h2>
+            <p>Set free with a Web3 wallet where self-custody is honored.</p>
+            <button class="mobile_download">Download for Chrome
+                <span><i class="fa-brands fa-chrome"></i></span>
+            </button>
+            <div class="rating_stars">
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.87</span>
+                </span>
+            </div>
+        </section>
+
+        <section class="features_page_container">
+            <div class="head">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="features_page">
+                <img src="./assets/blockwallet.webp" alt="Block Wallet interface" class="features_page_image">
+
+                <div class="features_details">
+                    <div>
+                        <h3>Connect to Any DApp</h3>
+                        <p>Make BlockWallet your go-to browser wallet. It's simple, really. Just set it as the default,
+                            and you're all set. Now you can connect to any DApp with ease.</p>
+                    </div>
+
+                    <div>
+                        <h3>Manage DApps</h3>
+                        <p>BlockWallet makes it a breeze to keep track of your connected DApps. There's a tidy list for
+                            you to glance at, and disconnecting is simple. Just one click, and you're free.</p>
+                    </div>
+
+                    <div>
+                        <h3>Revoke Allowances</h3>
+                        <p>Signing a token allowance enables a DApp to freely control your assets - this includes
+                            spending
+                            your tokens
+                            and trading your NFTs. If not revoked, they keep this control forever. With BlockWallet, you
+                            can
+                            easily
+                            <a href="">revoke these allowances</a> to regain control and protect what's yours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
