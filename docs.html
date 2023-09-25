@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ccf93aea0.js" crossorigin="anonymous"></script>
+    <title>Docs</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="header_one header_two header_three">
+        <div class="header_container">
+            <a href="/">
+                <img src="./assets/logo.svg" alt="The name of the company's website also serving as the logo"
+                    class="header_logo">
+            </a>
+
+            <!-- -----------Desktop View --------------------- -->
+            <nav class="header_nav_desktop">
+                <ul class="header_ul_desktop">
+                    <li><a href="#" class="group_one">Features</a></li>
+                    <li><a href="#" class="group_two">Resource Library</a></li>
+                    <li><a href="#" class="group_three">Compare</a></li>
+                    <li><a href="#" class="group_four">Token</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger_menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button class="download_btn">Download</button>
+        </div>
+    </header>
+
+    <!-- -------------------- Navbar for Mobile View Only ---------------------- -->
+    <nav class="header_nav_mobile">
+        <button class="hamburger_menu close_menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul class="header_ul_mobile">
+            <!-- ----------------- Features Navbar -------------------------- -->
+            <li class="features">Features <span><i class="fa-solid fa-caret-down"></i></span></li>
+            <div class="mobile_features_container">
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Productive</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-rotate"></i>Swaps</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bridge"></i>Bridges</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shuffle"></i>Gas Tracker</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bitcoin-sign"></i>Buy Crypto</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Safe</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-server"></i>Hardware Wallet Support</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-gift"></i>Token Allowances Revoke</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shield"></i>Phishing Protection</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Connected</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-road-bridge"></i>Infrastructure</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-hive"></i>Web3 Support</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-network-wired"></i>Quick Network Finder</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_features_column">
+                    <h5><span>{ }</span> Stay Private</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-bots"></i>Flashbots RPC</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-eye"></i> Privacy Proxy</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <!--  -------------------- Resource Navbar ------------------------------ -->
+            <li class="resource">Resource Library<span><i class="fa-solid fa-caret-down"></i></span></li>
+            <div class="mobile_resource_container">
+                <div class="mobile_resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-blog"></i>Blog</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-file"></i>Docs</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-user-graduate"></i>Academy</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <!-- ------------------- Compare Navbar ------------------------- -->
+            <li class="compare">Compare <span><i class="fa-solid fa-caret-down"></i></span></li>
+            <div class="mobile_compare_container">
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-meta"></i>METAMASK</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-wallet"></i></i>Trust Wallet</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-arrow-right-to-city"></i>EXODUS</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-horse-head"></i>Taho</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#" class="fiveth_link">
+                            <h6>XDEFI <i class="fa-solid fa-shield"></i></h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="mobile_compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-magento"></i>argent</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+
+            <!-- --------------- Token Nav -------------------- -->
+            <li><a href="#" class="">Token</a></li>
+        </ul>
+
+        <button class="mobile_download">Download for Chrome
+            <span><i class="fa-brands fa-chrome"></i></span>
+        </button>
+    </nav>
+    <div class="overlay"></div>
+
+
+    <!--  ------------------- Navbar for Desktop View Only ---------------------- -->
+    <!-- --------------------- Features nav bar ----------------- -->
+    <nav>
+        <ul class="features_ul">
+            <div class="features_container">
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Productive</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-rotate"></i>Swaps</h6>
+                            <p>Swap tokens at low cost right within the wallet</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bridge"></i>Bridges</h6>
+                            <p>Hop between chains with ease directly in the wallet.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shuffle"></i>Gas Tracker</h6>
+                            <p>Keep an eye on gas prices, catch the sweet spot and save on fees.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-bitcoin-sign"></i>Buy Crypto</h6>
+                            <p>Purchase Crypto using your credit or debit card with ease.</p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Safe</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-server"></i>Hardware Wallet Support</h6>
+                            <p>
+                                Connect Ledger, Trezor or Keystone for the ultimate security.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-gift"></i>Token Allowances Revoke</h6>
+                            <p> Keep your tokens in check, revoke permissions, and stay in control.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-shield"></i>Phishing Protection</h6>
+                            <p>
+                                Generate unique artwork to recognize fake wallet pop-ups.</p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Connected</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-road-bridge"></i>Infrastructure</h6>
+                            <p>
+                                Robust nodes and failover system, to keep your wallet running when it matters the most.
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-hive"></i>Web3 Support</h6>
+                            <p>
+                                Set free in Web3 - connect with your favorite DApps.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-network-wired"></i>Quick Network Finder</h6>
+                            <p>
+                                Discover and connect to new networks in seconds.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+                <div class="features_column">
+                    <h5><span>{ }</span> Stay Private</h5>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-bots"></i>Flashbots RPC</h6>
+                            <p>
+                                Save money - say bye to frontrunning bots and don't pay for failed transactions.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-eye"></i> Privacy Proxy</h6>
+                            <p>
+                                Stop leaking IP address and more to node providers.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+
+    <!-- ----------------- Resource Nav ---------------------- -->
+    <nav>
+        <ul class="resource_ul">
+            <div class="resource_container">
+                <div class="resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-blog"></i>Blog</h6>
+                            <p>Catch up on BlockWallet news and stay in the loop with the latest developments.</p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-regular fa-file"></i>Docs</h6>
+                            <p>
+                                Dive into detailed docs and guides to master BlockWallet with ease.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="resource_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-user-graduate"></i>Academy</h6>
+                            <p>
+                                Master the essentials of blockchain, wallets, network bridges, and much more.
+                            </p>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- --------------------------- Compare Nav ---------------------------- -->
+    <nav>
+        <ul class="compare_ul">
+            <div class="compare_container">
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-meta"></i>METAMASK</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-wallet"></i></i>Trust Wallet</h6>
+                        </a>
+                    </li>
+                </div>
+
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-arrow-right-to-city"></i>EXODUS</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-solid fa-horse-head"></i>Taho</h6>
+                        </a>
+                    </li>
+                </div>
+                <div class="compare_column">
+                    <li>
+                        <a href="#" class="fiveth_link">
+                            <div>
+                                <h6>XDEFI</h6>
+                                <small>WALLET</small>
+                            </div>
+                            <i class="fa-solid fa-shield"></i>
+                        </a>
+                    </li>
+                </div>
+                <div class="compare_column">
+                    <li>
+                        <a href="#">
+                            <h6><i class="fa-brands fa-magento"></i>argent</h6>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <button>Compare All</button>
+        </ul>
+    </nav>
+    <!-- -------------------- End of Navbar for Desktop View -------------------- -->
+
+    <main>
+
+        <!-- -------------------- Docs Section --------------------------- -->
+        <section class="docs_page_container">
+            <h1>Docs</h1>
+
+            <nav class="docs_nav">
+                <ul>
+                    <li><a href="#" class="ative_link">Learn</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Solve a Problem</a></li>
+                    <li><a href="#">Import From Any Wallet</a></li>
+                </ul>
+            </nav>
+
+
+            <h3>Let&apos;s Get Started</h3>
+
+            <article class="all_docs">
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon1.svg" alt="">
+                        <h5>Send & Receive Tokens</h5>
+                        <p>Learn how to send and receive tokens using BlockWallet.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Set BlockWallet as Your Default Browser Wallet</h5>
+                        <p>Learn how to send set BlockWallet as your default wallet for interacting with web3 DApps.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Download & Install BlockWallet</h5>
+                        <p>Learn how to install BlockWallet on your browser.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Create a New Wallet</h5>
+                        <p>Create a new wallet and save your seed phrase securely.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Store Your Seed Phrase Securely</h5>
+                        <p>Learn how to securely store your seed phrase.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Import Your Wallet Using a Seed Phrase</h5>
+                        <p>Learn how to import an existing wallet using your seed phrase.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>How to Add Address Book Contacts</h5>
+                        <p>Learn how to add Address Book contacts.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+            </article>
+
+            <h3>Get the Most out of BlockWallet</h3>
+
+            <article class="all_docs">
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon1.svg" alt="">
+                        <h5>Revoke Token Allowances</h5>
+                        <p>Learn about token allowances and how you can revoke allowances easily with BlockWallet.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>What is Lock Timeout?</h5>
+                        <p>Learn how to improve your security on BlockWallet with lock timeout.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>What is Privacy Proxy?</h5>
+                        <p>Learn how BlockWallet helps you retain your privacy on web3.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Stay Safe When Connecting to DApps</h5>
+                        <p>Learn how to keep your funds and wallet secure when connecting to DApps.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Swap Tokens Using BlockWallet</h5>
+                        <p>Learn how to swap your tokens using BlockWallet with ease.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Add Custom Tokens</h5>
+                        <p>Learn how to add custom ERC-20 and similar tokens to your wallet.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Connect BlockWallet to a DApp</h5>
+                        <p>Learn how to connect your BlockWallet to any DApp out there.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>What is Phishing Protection?</h5>
+                        <p>Learn how to use phishing protection on BlockWallet.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Keyboard Shortcuts?</h5>
+                        <p>Learn how to speed up your flows in BlockWallet with keyboard shortcuts.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Net Worth</h5>
+                        <p>Learn about your wallet net worth and how to make the most of it.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Add a Network or Custom RPC</h5>
+                        <p>Learn how to add a new network or a custom RPC.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Bridge Tokens Using BlockWallet</h5>
+                        <p>Learn how to bridge your funds from one network to the other using BlockWallet bridges.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Set Your Default Gas Setting</h5>
+                        <p>Learn how you can set your default gas setting depending on your needs.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Import Your Account From Private Key</h5>
+                        <p>Learn how you can import a single account using a private key.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Switch Networks & Reorder Your Network List</h5>
+                        <p>Learn how to switch networks and reorder your networks list.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Create a New Account</h5>
+                        <p>Learn how to create a new account.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Buy Crypto With BlockWallet</h5>
+                        <p>Learn how to buy crypto seamlessly using BlockWallet and Onramper.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+            </article>
+
+            <h3>Discover More</h3>
+
+            <article class="all_docs">
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Optimal Online Privacy With BlockWallet</h5>
+                        <p>Create the best privacy setup on web3 with BlockWallet.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Browsers That Support BlockWallet</h5>
+                        <p>Check which browsers are supported by BlockWallet.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>How do I connect BlockWallet to a Defi app?</h5>
+                        <p>How do I connect BlockWallet to a Defi app?</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>What Is a Dropped Transaction?</h5>
+                        <p>A short explanation of what is a dropped transaction why it might occur and the main
+                            difference between replaced transaction.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+            </article>
+
+            <h3>Hardware Wallets</h3>
+
+            <article class="all_docs">
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>How do Hardware Wallet Work</h5>
+                        <p>Learn how hardware wallets work and the benefits of using a hardware wallet with BlockWallet.
+                        </p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon2.svg" alt="">
+                        <h5>Connect a Hardware Wallet to BlockWallet</h5>
+                        <p>Learn how to connect Hardware wallets like Ledger, Trezor, and Keystone to BlockWallet.</p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+            </article>
+
+            <h3>Ecosystem</h3>
+
+            <article class="all_docs">
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>Integrate BlockWallet With Your DApp</h5>
+                        <p>Learn how to integrate BlockWallet with your DApp.
+                        </p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+
+                <div class="docs_box">
+                    <div>
+                        <img src="/docs_assets/icon3.svg" alt="">
+                        <h5>BLANK Token</h5>
+                        <p>Learn about BLANK, the BlockWallet ecosystem token.
+                        </p>
+                    </div>
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- ------------------- Installation Section ----------------------- -->
+        <article class="installation_container installation_article">
+            <div class="all_description">
+                <div class="installation_text">
+                    <h2><em>Start with</em> BlockWallet</h2>
+                </div>
+                <button class="mobile_download hero_button">Download for Chrome
+                    <span><i class="fa-brands fa-chrome"></i></span>
+                </button>
+                <div class="rating_stars">
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.87</span>
+                    </span>
+                </div>
+            </div>
+        </article>
+
+        <!-- -------------- Subscription Section ------------------- -->
+        <section class="subscription_container">
+            <h3><span>Stay Ahead</span> of the Game</h3>
+            <p>Get the latest news and exclusive offers first.</p>
+
+            <div class="input_field">
+                <input type="email" name="email" value="" placeholder="Enter your email">
+                <button>
+                    <span>Subscribe</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </div>
+
+            <small>By subscribing, I agree to the terms and conditions.</small>
+        </section>
+
+
+        <!-- ------------------- Information Section ---------------------- -->
+        <section class="information_container">
+            <article class="information_wrapper">
+                <div>
+                    <h6>{ } <span>Get Started</span></h6>
+                    <ul>
+                        <li>Download & Install BlockWallet</li>
+                        <li>Create a New Wallet</li>
+                        <li>Import From Any Wallet</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>{ } <span>Networks</span></h6>
+                    <div class="ul_child">
+                        <ul>
+                            <li>Ethereum</li>
+                            <li>Avalanche</li>
+                            <li>zkSync</li>
+                            <li>Optimism</li>
+                            <li>Kava</li>
+                        </ul>
+                        <ul>
+                            <li>Polygon</li>
+                            <li>Arbitrum</li>
+                            <li>Gnosis</li>
+                            <li>Cronos</li>
+                            <li>Klaytn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h6>{ } <span>Legal</span></h6>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>Risk Disclaimer</li>
+                        <li>Terms and Conditions</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6>{ } <span>Questions</span></h6>
+                    <ul>
+                        <li>
+                            <a href="mailto:hello@blockwallet.io">hello@blockwallet.io</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <article>
+                <h2>BlockWallet</h2>
+                <ul class="social_icons">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-paper-plane"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </li>
+                </ul>
+            </article>
+
+            <div class="attribute">
+                <small>&copy; BlockWallet 2023</small>
+                <small>Designed by <span>Jeremiah C.</span></small>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

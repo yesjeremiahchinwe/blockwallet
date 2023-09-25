@@ -508,7 +508,6 @@ main {
     width: 100%;
     background-color: black;
     color: #fff;
-    padding: 18px;
 }
 
 
@@ -521,6 +520,7 @@ main {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    padding: 18px;
 }
 
 .video_element {
@@ -697,6 +697,7 @@ main {
     font-size: 2.5rem;
     text-align: center;
     margin: 6rem 0;
+    padding: 18px;
 }
 
 .details_container h3 span {
@@ -786,12 +787,13 @@ main {
 /* -------------------------- Solid Ground Section --------------------------------- */
 .solid_ground {
     margin: 3rem auto;
+    padding: 18px;
 }
 
 .solid_ground h3 {
     display: block;
     font-size: 3rem;
-    margin: 2rem auto;
+    margin: 2rem auto 4rem auto;
     text-align: center;
 }
 
@@ -941,21 +943,54 @@ td button {
     width: 100%;
     background-color: white;
     padding: 2rem 0 0;
+
 }
 
-.installation article {
+.installation_article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem auto;
-    width: 100%;
-    background-color: #cbfd13;
-    ;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 6rem 0;
-    /* position: relative; */
+    width: 100%;   
+    background-color: #cffe25;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    padding: 8rem 18px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    height: 100vh;
+}
+
+.installation_article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19rem;
+    height: 27.4rem;
+    padding: 2rem 0;
+    background-image: url(blog_assets/wallet_circle.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.installation_article::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 19rem;
+    height: 27.4rem;
+    padding: 2rem 0;
+    background-image: url(blog_assets/wallet_circle.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    transform: rotate(180deg);
 }
 
 .all_description {
@@ -963,14 +998,25 @@ td button {
     text-align: center;
 }
 
-.installation h2 {
-    font-size: 3rem;
+.installation_text {
+    width: 100%;
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+.installation_text h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     width: 70%;
     margin: 1rem auto;
+    font-style: normal;
+    font-size: 3rem;
 }
 
-.installation h2 span {
+.installation_text h2 em {
     font-style: italic;
     font-weight: 500;
 }
@@ -987,34 +1033,6 @@ td button {
     background-color: black;
 }
 
-.circles {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-
-.circles .circle_row {
-    display: flex;
-    align-items: center;
-}
-
-.installation .circle {
-    width: 100px;
-    margin: 0 -2rem;
-    height: 400px;
-    border: 1px solid black;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.installation .circle:last-of-type {
-    display: none;
-}
-
-
 
 /* -------------------------Blog Section -------------------------- */
 .blog_container {
@@ -1027,7 +1045,7 @@ td button {
     color: white;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding: 6rem 1rem 3rem 1rem;
+    padding: 6rem 18px 3rem;
 }
 
 .blog_head {
@@ -1100,7 +1118,7 @@ td button {
 /* -------------- Frequently Asked Questions Section ---------------------- */
 .FQA_container {
     background-color: black;
-    padding: 2rem;
+    padding: 18px;
 }
 
 .FQA_container article {
@@ -1177,7 +1195,7 @@ td button {
     background-color: black;
     color: white;
     width: 100%;
-    padding: 4rem 1rem;
+    padding: 4rem 18px;
 }
 
 .subscription_container h3 {
@@ -1254,7 +1272,7 @@ td button {
 .information_container {
     background-color: black;
     color: #a3a2a2;
-    padding: 1rem;
+    padding: 1rem 18px;
 }
 
 .information_wrapper {
@@ -1311,7 +1329,7 @@ td button {
 footer {
     width: 100%;
     color: white;
-    padding: 2rem 1rem;
+    padding: 2rem 18px;
     background-color: black;
 }
 
@@ -1442,7 +1460,7 @@ footer .attribute {
     }
 
     .features_page_container {
-        margin: 4rem auto;
+        margin: 1rem auto;
     }
 
     .features_page {

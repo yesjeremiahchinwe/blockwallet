@@ -1,0 +1,123 @@
+.docs_page_container {
+    width: 100%;
+    color: whitesmoke;
+    padding: 18px;
+}
+
+.docs_page_container h1 {
+    display: block;
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: whitesmoke;
+}
+
+.docs_page_container h3 {
+    display: block;
+    font-size: 1.5rem;
+    margin: 4rem 0 2rem 0;
+    color: rgb(185, 184, 184);
+}
+
+.docs_nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    border-bottom: 1px solid gray;
+}
+
+.docs_nav ul li {
+    list-style: none;
+}
+
+.docs_nav ul li a {
+    padding: 0 0 0.75rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid transparent
+}
+
+.docs_nav ul li a.ative_link {
+    color: #cbfd13;
+    border-bottom: 2px solid #cbfd13;
+}
+
+.docs_nav ul li a:hover {
+    border-bottom: 2px solid #cbfd13;
+}
+
+.all_docs {
+    display: grid;
+    gap: 2rem;
+}
+
+.docs_box {
+    background-color: #212121;
+    border-radius: 20px;
+    padding: 3.5rem 2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.docs_box h5 {
+    font-size: 1.5rem;
+    margin: 1rem 0 1.25rem 0;
+    color: white;
+}
+
+.docs_box p {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.5rem;
+}
+
+.docs_box i {
+    display: none;
+}
+
+/*  ---------------------- Media Query ------------------------ */
+@media screen and (min-width: 1000px) {
+    .docs_page_container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .docs_page_container h1 {
+        margin: 3rem 0;
+        font-size: 5rem;
+    }
+
+    .docs_nav ul {
+        font-size: 1.25rem;
+        margin: 4rem 0;
+    }
+
+    .all_docs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .docs_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .docs_box h5 {
+        font-size: 2rem;
+    }
+
+    .docs_box i {
+        display: block;
+        align-self: flex-end;
+        font-size: 2rem;
+        transform: rotate(-45deg);
+    }
+
+    .docs_box div {
+        max-width: 70%;
+        margin-bottom: -2rem;
+    }
+
+}

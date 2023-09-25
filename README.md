@@ -27,7 +27,7 @@ The project has a total of about 4 pages with some functionalities.
 
 ### Screenshots
 
-![Desktop View](./assets/block_wallet_desktop.png)
+![Desktop View](./assets/block_wallet_updated.png)
 
 ### Links
 
