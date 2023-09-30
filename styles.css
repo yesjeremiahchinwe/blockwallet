@@ -536,26 +536,23 @@ main {
 }
 
 .hero_container {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    color: rgba(255, 255, 255, 0.9);
     position: relative;
-    z-index: 1
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero h2 {
-    font-size: 3.25rem;
-    width: 100%;
+    font-size: 3.5rem;
     line-height: 3.25rem;
     font-weight: 600;
-    margin: 0.5rem auto 0.75rem auto;
+    margin: 1rem auto 0.75rem auto;
     font-family: 'old';
     font-style: italic;
 }
 
 .hero p {
-    margin: 1rem 0;
+    width: 95%;
+    margin: 1rem auto;
     font-weight: 400;
     letter-spacing: 0.5px;
     color: rgba(255, 255, 255, 0.8);
@@ -563,7 +560,7 @@ main {
 
 .hero .hero_button {
     display: block;
-    margin: 2.5rem auto 1rem auto;
+    margin: 1.5rem auto 1rem auto;
     cursor: pointer;
 }
 
@@ -933,6 +930,10 @@ td button {
     cursor: pointer;
 }
 
+.comparism_button a {
+    color: black;
+}
+
 .comparism_button:hover {
     border-color: black;
 }
@@ -967,7 +968,7 @@ td button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 19rem;
+    width: 15rem;
     height: 27.4rem;
     padding: 2rem 0;
     background-image: url(blog_assets/wallet_circle.svg);
@@ -975,6 +976,7 @@ td button {
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -1;
+    transform: translate(-7rem);
 }
 
 .installation_article::after {
@@ -982,7 +984,7 @@ td button {
     position: absolute;
     top: 0;
     right: 0;
-    width: 19rem;
+    width: 15rem;
     height: 27.4rem;
     padding: 2rem 0;
     background-image: url(blog_assets/wallet_circle.svg);
@@ -991,6 +993,7 @@ td button {
     background-size: contain;
     z-index: -1;
     transform: rotate(180deg);
+    right: -7rem;
 }
 
 .all_description {
@@ -1005,10 +1008,7 @@ td button {
 }
 
 .installation_text h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     text-align: center;
     width: 70%;
     margin: 1rem auto;
@@ -1294,12 +1294,15 @@ td button {
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
 .information_wrapper .ul_child {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -1486,6 +1489,7 @@ footer .attribute {
     .features_details div h3,
     .features_details div p {
         text-align: start;
+        width: 80%;
     }
 
     .details_container {
@@ -1569,6 +1573,17 @@ footer .attribute {
         width: 150px;
         height: 600px;
         margin: 0 -0.25rem;
+    }
+
+    .installation_article::before, .installation_article::after {
+        transform: translate(0);
+        right: 0;
+        top: 2rem;
+        width: 19rem;
+    }
+
+    .installation_article::after {
+        transform: rotate(180deg);
     }
 
     .installation .circle:last-of-type {
@@ -1675,7 +1690,7 @@ footer .attribute {
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
         align-items: flex-start;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .information_wrapper ul {
