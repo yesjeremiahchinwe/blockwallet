@@ -8,7 +8,6 @@ body {
     background-color: #08090a;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    width: 100%;
     min-width: 320px;
 }
 
@@ -132,7 +131,7 @@ header {
     position: fixed;
     opacity: 0;
     top: 0;
-    z-index: 10;
+    z-index: -10;
     transition: opacity 0.6s ease-in-out;
 }
 
@@ -198,19 +197,19 @@ header {
     margin-bottom: -0.5rem;
 }
 
-.mobile_features_column li a h6,
-.mobile_resource_column li a h6,
-.mobile_compare_column li a h6 {
+.mobile_features_column li a,
+.mobile_resource_column li a,
+.mobile_compare_column li a {
     display: flex;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     font-size: 600;
     font-size: 14px;
 }
 
-.mobile_features_column li a h6:hover,
-.mobile_resource_column li a h6:hover,
-.mobile_compare_column li a h6:hover {
+.mobile_features_column li a:hover,
+.mobile_resource_column li a:hover,
+.mobile_compare_column li a:hover {
     color: #babbba;
 }
 
@@ -817,7 +816,7 @@ main {
     line-height: 1.5rem;
 }
 
-.solid_ground button {
+.solid_ground .learn_more {
     display: block;
     border: none;
     background-color: transparent;
@@ -865,7 +864,7 @@ main {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    overflow-x: auto
+    overflow-x: auto;
 }
 
 table {
@@ -874,6 +873,24 @@ table {
     border-collapse: collapse;
     font-size: 1.35rem;
 }
+
+.table_wrapper::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+.table_wrapper::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+.table_wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 50px;
+  }
+  
+.table_wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgb(197, 195, 195);
+  }
 
 .cases {
     background-color: rgb(238, 235, 235);
