@@ -1135,7 +1135,7 @@ td button {
 /* -------------- Frequently Asked Questions Section ---------------------- */
 .FQA_container {
     background-color: black;
-    padding: 18px;
+    padding: 18px 0;
 }
 
 .FQA_container article {
@@ -1147,7 +1147,7 @@ td button {
 
 .FQA_container h3 {
     margin-bottom: 2rem;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     color: white;
 }
 
@@ -1158,7 +1158,6 @@ td button {
 
 .FQA_container article ul li {
     border-top: 1px solid gray;
-    padding: 2rem 0;
     color: #818181;
 }
 
@@ -1170,40 +1169,52 @@ td button {
     cursor: pointer;
 }
 
-.FQA_container article .question:hover {
+.question {
+    width: 100%;
+    background-color: transparent;
+    color: gray;
+    border: none;
+    outline: none;
+    text-align: start;
+    font-size: 1.1rem;
+    transition: 0.5s;
+    padding: 1.5rem 0;
+}
+
+.active, .question:hover {
     color: white;
 }
 
-.FQA_container article .question h5 {
-    font-size: 1.5rem;
+.answer p {
+    padding: 0.25rem 0;
 }
 
-.question button {
-    padding: 1rem;
-    background-color: transparent;
-    border: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.answer p:last-of-type {
+    margin-bottom: 1.5rem;
 }
 
-.plus_icon,
-.plus_icon::before {
-    width: 20px;
-    height: 2px;
-    background-color: white;
-    border-radius: 2px;
-    position: absolute;
-    cursor: pointer;
+.question::after {
+    content: "\02795";
+    font-size: 1rem;
 }
 
-.plus_icon::before {
-    content: "";
+.active::after {
+    content: "\2796";
 }
 
-.plus_icon::before {
-    transform: translate(-9.5px, 0px) rotate(90deg);
+.answer {
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    max-width: 780px;
+    transition: height 0.5s ease-out, opacity 1s ease-out;
+}
+
+.answer p {
+    color: white;
+    line-height: 1.5rem;
+    margin-right: auto;
+    text-align: start;
 }
 
 
@@ -1656,7 +1667,7 @@ footer .attribute {
     }
 
     .FQA_container article {
-        width: 90%;
+        width: 80%;
         padding: 3rem;
         margin: 0 auto;
     }
@@ -1665,12 +1676,13 @@ footer .attribute {
         font-size: 2.75rem;
     }
 
-    .FQA_container article .question h5 {
-        font-size: 2rem;
+    .FQA_container article .question {
+        font-size: 1.75rem;
+        padding: 2.25rem 0;
     }
 
-    .FQA_container article ul li:last-of-type {
-        border-bottom: 1px solid gray;
+    .FQA_container article .question::after {
+        font-size: 1.5rem;
     }
 
     .subscription_container h3 {

@@ -104,3 +104,53 @@ compare.addEventListener("click", () => {
     chevronIconThree.classList.toggle("rotate_three")
 })
 /*  ---------------------------- End of Mobile Nav ------------------------------ */
+
+
+/* ---------------- Accordion for Frequently Asked Quection Section ------------------- */
+const firstQuestion = document.getElementById("first_question")
+const secondQuestion = document.getElementById("second_question")
+const thirdQuestion = document.getElementById("third_question")
+const firstAnswer = document.getElementById("first_question_answer")
+const secondAnswer = document.getElementById("second_question_answer")
+const thirsAnswer = document.getElementById("third_question_answer")
+let isOpenFirst = true
+let isOpenSecond = true
+let isOpenThird = true
+
+
+firstQuestion.addEventListener("click", function () {
+    firstQuestion.classList.toggle("active")
+    if (isOpenFirst) {
+        firstAnswer.style.height = firstAnswer.scrollHeight + "px"
+        isOpenFirst = false
+    } else {
+        firstAnswer.style.height = 0
+        isOpenFirst = true
+    }
+})
+
+secondQuestion.addEventListener("click", function () {
+    secondQuestion.classList.toggle("active")
+    if (isOpenSecond) {
+        secondAnswer.style.height = secondAnswer.scrollHeight + "px"
+        isOpenSecond = false
+    } else {
+        secondAnswer.style.height = 0
+        isOpenSecond = true
+    }
+})
+
+thirdQuestion.addEventListener("click", function () {
+    thirdQuestion.classList.toggle("active")
+    if (isOpenThird) {
+        thirsAnswer.style.height = thirsAnswer.scrollHeight + "px"
+        isOpenThird = false
+    } else {
+        thirsAnswer.style.height = 0
+        isOpenThird = true
+    }
+})
+
+
+
+
